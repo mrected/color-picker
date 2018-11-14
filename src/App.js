@@ -41,6 +41,9 @@ class App extends Component {
       a: Math.round(Math.random() * 10) / 10
     })
   }
+  componentDidMount() {
+    this.randomizer()
+  }
 
   render() {
     const color = `hsla(${this.state.h}, ${this.state.s}%, ${this.state.l}%, ${
