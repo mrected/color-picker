@@ -33,6 +33,15 @@ class App extends Component {
     })
   }
 
+  randomizer = () => {
+    this.setState({
+      h: Math.round(Math.random() * 360),
+      s: Math.round(Math.random() * 100),
+      l: Math.round(Math.random() * 100),
+      a: Math.round(Math.random() * 10) / 10
+    })
+  }
+
   render() {
     const color = `hsla(${this.state.h}, ${this.state.s}%, ${this.state.l}%, ${
       this.state.a
@@ -75,6 +84,7 @@ class App extends Component {
             value={this.state.a}
             onChange={this.slideA}
           />
+          <button onClick={this.randomizer}>Randomize</button>
         </main>
       </div>
     )
