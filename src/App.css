@@ -17,6 +17,10 @@ main {
 #color-box {
   width: 100px;
   height: 100px;
-  margin: 10px;
   border: solid 2px #555;
+}
+
+#pattern {
+  background-image: url('pattern.jpg');
+  margin: 10px;
 }

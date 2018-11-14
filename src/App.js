@@ -53,7 +53,9 @@ class App extends Component {
       <div id="container">
         <main>
           <p>{color}</p>
-          <div id="color-box" style={{ background: color }} />
+          <div id="pattern">
+            <div id="color-box" style={{ background: color }} />
+          </div>
           <label>Hue: {this.state.h}</label>
           <input
             type="range"
