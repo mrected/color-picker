@@ -91,7 +91,7 @@ class App extends Component {
             onChange={this.slideA}
           />
           <p>
-            <button onClick={this.randomizer}>Randomize</button>
+            <button onClick={this.randomizer}>Randomize</button>sdf
           </p>
 
           <div>
