@@ -51,90 +51,93 @@ class App extends Component {
       this.state.a
     })`
     return (
-      <div id="container">
-        <main>
-          <p>{color}</p>
-          <div id="pattern">
-            <div id="color-box" style={{ background: color }} />
-          </div>
-          <label>Hue: {this.state.h}</label>
-          <input
-            type="range"
-            min="0"
-            max="360"
-            value={this.state.h}
-            onChange={this.slideH}
-          />
-          <label>Saturation: {this.state.s}</label>
-          <input
-            type="range"
-            min="0"
-            max="100"
-            value={this.state.s}
-            onChange={this.slideS}
-          />
-          <label>Lightness: {this.state.l}</label>
-          <input
-            type="range"
-            min="0"
-            max="100"
-            value={this.state.l}
-            onChange={this.slideL}
-          />
-          <label>Alpha: {this.state.a}</label>
-          <input
-            type="range"
-            min="0"
-            max="1"
-            step=".1"
-            value={this.state.a}
-            onChange={this.slideA}
-          />
-          <p>
-            <button onClick={this.randomizer}>Randomize</button>sdf
-          </p>
-
-          <div>
-            <label htmlFor="h">H:</label>
+      <>
+        <h1>HSLA Color Picker</h1>
+        <div id="container">
+          <main>
+            <p>{color}</p>
+            <div id="pattern">
+              <div id="color-box" style={{ background: color }} />
+            </div>
+            <label>Hue: {this.state.h}</label>
             <input
-              type="number"
-              name="h"
+              type="range"
               min="0"
               max="360"
               value={this.state.h}
               onChange={this.slideH}
             />
-            <label htmlFor="s">S:</label>
+            <label>Saturation: {this.state.s}</label>
             <input
-              type="number"
-              name="s"
+              type="range"
               min="0"
               max="100"
               value={this.state.s}
               onChange={this.slideS}
             />
-            <label htmlFor="l">L:</label>
+            <label>Lightness: {this.state.l}</label>
             <input
-              type="number"
-              name="l"
+              type="range"
               min="0"
               max="100"
               value={this.state.l}
               onChange={this.slideL}
             />
-            <label htmlFor="a">A:</label>
+            <label>Alpha: {this.state.a}</label>
             <input
-              type="number"
-              name="a"
+              type="range"
               min="0"
               max="1"
               step=".1"
               value={this.state.a}
               onChange={this.slideA}
             />
-          </div>
-        </main>
-      </div>
+            <p>
+              <button onClick={this.randomizer}>Randomize</button>
+            </p>
+
+            <div>
+              <label htmlFor="h">H:</label>
+              <input
+                type="number"
+                name="h"
+                min="0"
+                max="360"
+                value={this.state.h}
+                onChange={this.slideH}
+              />
+              <label htmlFor="s">S:</label>
+              <input
+                type="number"
+                name="s"
+                min="0"
+                max="100"
+                value={this.state.s}
+                onChange={this.slideS}
+              />
+              <label htmlFor="l">L:</label>
+              <input
+                type="number"
+                name="l"
+                min="0"
+                max="100"
+                value={this.state.l}
+                onChange={this.slideL}
+              />
+              <label htmlFor="a">A:</label>
+              <input
+                type="number"
+                name="a"
+                min="0"
+                max="1"
+                step=".1"
+                value={this.state.a}
+                onChange={this.slideA}
+              />
+            </div>
+          </main>
+        </div>
+      </>
     )
   }
 }
