@@ -4,7 +4,7 @@ Uses React.js, css and javascript to set a color box.
 
 User can use sliders, manualy enter values or click a randomize button to choose colors
 
-<p>Uses:</p>
+<p><strong>Uses:</strong></p>
 <ul>
   <li>HTML 5</li>
   <li>CSS</li>
