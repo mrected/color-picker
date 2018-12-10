@@ -4,6 +4,14 @@ Uses React.js, css and javascript to set a color box.
 
 User can use sliders, manualy enter values or click a randomize button to choose colors
 
+<p>Uses:</p>
+<ul>
+  <li>HTML 5</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>React.JS</li>
+</ul>
+
 <a href="http://gifted-representative.surge.sh">See a live version of it here</a>
 
 <p align="center">
