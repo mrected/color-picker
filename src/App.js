@@ -41,6 +41,7 @@ class App extends Component {
       a: Math.round(Math.random() * 10) / 10
     })
   }
+
   componentDidMount() {
     this.randomizer()
   }
@@ -89,7 +90,49 @@ class App extends Component {
             value={this.state.a}
             onChange={this.slideA}
           />
-          <button onClick={this.randomizer}>Randomize</button>
+          <p>
+            <button onClick={this.randomizer}>Randomize</button>
+          </p>
+
+          <div>
+            <label htmlFor="h">H:</label>
+            <input
+              type="number"
+              name="h"
+              min="0"
+              max="360"
+              value={this.state.h}
+              onChange={this.slideH}
+            />
+            <label htmlFor="s">S:</label>
+            <input
+              type="number"
+              name="s"
+              min="0"
+              max="100"
+              value={this.state.s}
+              onChange={this.slideS}
+            />
+            <label htmlFor="l">L:</label>
+            <input
+              type="number"
+              name="l"
+              min="0"
+              max="100"
+              value={this.state.l}
+              onChange={this.slideL}
+            />
+            <label htmlFor="a">A:</label>
+            <input
+              type="number"
+              name="a"
+              min="0"
+              max="1"
+              step=".1"
+              value={this.state.a}
+              onChange={this.slideA}
+            />
+          </div>
         </main>
       </div>
     )
