@@ -9,7 +9,7 @@ User can use sliders, manualy enter values or click a randomize button to choose
   <li>HTML 5</li>
   <li>CSS</li>
   <li>JavaScript</li>
-  <li>React.JS</li>
+  <li><a href="http://reactjs.org">React.JS</a></li>
 </ul>
 
 <a href="http://gifted-representative.surge.sh">See a live version of it here</a>
